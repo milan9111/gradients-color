@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 
 
 
-const New = () => {
+const New = ({changeFirstColor, changeSecondColor, addGradient, activeDisable}) => {
+    
+
+     
+
     return (
       <div>
          New
-         <div><input type="text"/></div>
-          <div><input type="text"/></div>
+          <div><input type="text" onChange={changeFirstColor} /></div> 
+          <div><input type="text" onChange={changeSecondColor}/></div>
           <div>
-            <Link to='/'>add gradient</Link>
+            <Link to='/' onClick={addGradient}><button disabled={activeDisable}>add gradient</button></Link>
           </div>
           <div>
             <Link to='/'>back</Link>
