@@ -1,15 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Gradient from "../../helpers/Gradient/Gradient";
+import Gradient from "../Gradient/Gradient";
 
-
-
-const Home = () => {
+ 
+const Home = ({id, firstColor, secondColor}) => {
+     
     return (
       <div>
-          Home
-          <Gradient />
-          <Link to="/new">add new gradient</Link>
+          <Gradient id={id} firstColor={firstColor} secondColor={secondColor}/>
       </div>
     );
   }

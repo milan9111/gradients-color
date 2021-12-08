@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+
 const New = () => {
     return (
       <div>
@@ -14,7 +15,6 @@ const New = () => {
           <div>
             <Link to='/'>back</Link>
           </div>
-          
       </div>
     );
   }

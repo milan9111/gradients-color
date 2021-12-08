@@ -1,9 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Edit = () => {
+const Edit = ({selectedColor}) => {
+    
     return (
       <div>
-         Edit
+         <div><input type="text" defaultValue={selectedColor[0].firstColor} /></div>
+          <div><input type="text" defaultValue={selectedColor[0].secondColor} /></div>
+          <div>
+            <Link to='/'>save gradient</Link>
+          </div>
+          <div>
+            <Link to='/'>back</Link>
+          </div>
       </div>
     );
   }
