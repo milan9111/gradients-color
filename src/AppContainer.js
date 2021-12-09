@@ -6,11 +6,9 @@ import ContextColors from './contexts/ContextColors';
 
 const AppContainer = () => {
 
-const [colors, setColors] = useState([{id: 1, firstColor: 'red', secondColor: 'blue'}, {id: 2, firstColor: 'green', secondColor: 'yellow'}]);
-
-
-
-  return (
+const [colors, setColors] = useState(JSON.parse(localStorage.getItem("dataColors")) || []);
+localStorage.setItem("dataColors", JSON.stringify(colors));
+return (
     <div>
         <ContextColors.Provider value={colors}>
             <App setColors={setColors}/>

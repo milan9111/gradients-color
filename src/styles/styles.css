@@ -1,0 +1,247 @@
+.app__container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 7px solid #fff;
+  border-radius: 3px;
+  margin-top: 100px;
+  background-color: #313335;
+}
+
+.home__container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.home__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.home__text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.home__button {
+  text-align: center;
+}
+
+.home__button button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  padding: 20px 180px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.home__button button:hover {
+  background-color: #a5f59b;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.home__buttons {
+  position: relative;
+}
+
+.home__colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px 0px;
+  margin-bottom: 25px;
+}
+
+.home__color {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.buttons__edit {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.buttons__edit button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.buttons__edit button:hover {
+  background-color: #ebd13e;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.buttons__remove {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.buttons__remove button {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons__remove button:hover {
+  background-color: #e98d8d;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.new__container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.new__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.new__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.new__add-button {
+  text-align: center;
+}
+
+.new__add-button button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  padding: 20px 189px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.new__add-button button:hover {
+  background-color: #a5f59b;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.new__back-button {
+  text-align: center;
+}
+
+.new__back-button button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  padding: 10px 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.new__back-button button:hover {
+  background-color: #e98d8d;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.input input {
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.edit__container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.edit__title {
+  text-align: center;
+}
+
+.edit__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 25px 0px;
+}
+
+.edit__save-button {
+  text-align: center;
+}
+
+.edit__save-button button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  padding: 20px 189px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.edit__save-button button:hover {
+  background-color: #a5f59b;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.edit__back-button {
+  text-align: center;
+}
+
+.edit__back-button button {
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  padding: 10px 50px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.edit__back-button button:hover {
+  background-color: #e98d8d;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.error {
+  text-align: center;
+  margin: 200px 0px;
+}

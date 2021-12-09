@@ -6,17 +6,30 @@ import Home from "./Home";
 
 
 
-const HomeContainer = () => {
-    const dataColors = useContext(ContextColors);
+const HomeContainer = ({setColors}) => {
 
-    let showGradientColor = dataColors.map(item => <Home key={item.id} id={item.id} firstColor={item.firstColor} secondColor={item.secondColor}/>)
+    const colors = useContext(ContextColors);
+    
+    const removeGradient = (event) => {
+        let editIndex = colors.findIndex((item) => item.id === Number(event.target.id));
+        colors.splice(editIndex, 1);
+        setColors([...colors]);
+    }
 
-    return (
-      <div>
-          <div>HOME</div>
+    let showGradientColor = colors.map(item => <Home key={item.id} id={item.id} firstColor={item.firstColor} secondColor={item.secondColor} removeGradient={removeGradient}/>)
+
+    return colors.length > 0 ? (
+      <section className="home__container">
+          <div className="home__title title">HOME</div>
+          <div className="home__button"><Link to="/new"><button>add new gradient</button></Link></div>
           {showGradientColor} 
-          <div><Link to="/new">add new gradient</Link></div>
-      </div>
+      </section>
+    ) : (
+      <section className="home__container">
+          <div className="home__title title">home</div>
+          <div className="home__text">Please, add colors...</div>
+          <div className="home__button"><Link to="/new"><button>add new gradient</button></Link></div>
+      </section>
     );
   }
   
