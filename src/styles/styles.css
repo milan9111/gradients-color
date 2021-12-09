@@ -3,14 +3,62 @@
   margin: 0 auto;
   border: 7px solid #fff;
   border-radius: 3px;
-  margin-top: 100px;
+  margin-top: 25px;
   background-color: #313335;
+}
+
+@media (max-width: 1200px) {
+  .app__container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .app__container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app__container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app__container {
+    max-width: 350px;
+  }
 }
 
 .home__container {
   max-width: 500px;
   margin: 0 auto;
   padding: 50px 0px;
+}
+
+@media (max-width: 1200px) {
+  .home__container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home__container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__container {
+    max-width: 300px;
+  }
 }
 
 .home__title {
@@ -40,10 +88,38 @@
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .home__button button {
+    padding: 20px 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home__button button {
+    padding: 20px 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__button button {
+    padding: 20px 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__button button {
+    padding: 20px 80px;
+  }
+}
+
 .home__button button:hover {
   background-color: #a5f59b;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+
+.home__list {
+  padding: 0px;
 }
 
 .home__buttons {
@@ -81,8 +157,9 @@
 
 .buttons__edit button {
   background-color: #fff;
+  padding: 5px 8px;
   border: none;
-  border-radius: 50%;
+  border-radius: 20px 20px 20px 20px;
   font-size: 18px;
   font-weight: 800;
   cursor: pointer;
@@ -102,8 +179,9 @@
 
 .buttons__remove button {
   background-color: #fff;
+  padding: 5px 10px;
   border: none;
-  border-radius: 50%;
+  border-radius: 15px;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
@@ -135,6 +213,20 @@
   margin-bottom: 25px;
 }
 
+@media (max-width: 576px) {
+  .new__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+}
+
 .new__add-button {
   text-align: center;
 }
@@ -147,6 +239,30 @@
   padding: 20px 189px;
   margin-bottom: 25px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .new__add-button button {
+    padding: 20px 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .new__add-button button {
+    padding: 20px 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new__add-button button {
+    padding: 20px 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .new__add-button button {
+    padding: 20px 80px;
+  }
 }
 
 .new__add-button button:hover {
@@ -182,6 +298,12 @@
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .input input {
+    margin-bottom: 25px;
+  }
+}
+
 .edit__container {
   max-width: 500px;
   margin: 0 auto;
@@ -201,6 +323,20 @@
   margin: 25px 0px;
 }
 
+@media (max-width: 576px) {
+  .edit__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
+
 .edit__save-button {
   text-align: center;
 }
@@ -213,6 +349,30 @@
   padding: 20px 189px;
   margin-bottom: 25px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .edit__save-button button {
+    padding: 20px 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .edit__save-button button {
+    padding: 20px 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .edit__save-button button {
+    padding: 20px 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .edit__save-button button {
+    padding: 20px 80px;
+  }
 }
 
 .edit__save-button button:hover {
