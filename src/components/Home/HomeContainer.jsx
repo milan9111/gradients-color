@@ -16,13 +16,15 @@ const HomeContainer = ({setColors}) => {
         setColors([...colors]);
     }
 
-    let showGradientColor = colors.map(item => <Home key={item.id} id={item.id} firstColor={item.firstColor} secondColor={item.secondColor} removeGradient={removeGradient}/>)
 
-    return colors.length > 0 ? (
+    return colors?.length > 0 ? (
       <section className="home__container">
-          <div className="home__title title">HOME</div>
+          <div className="home__title title">home</div>
           <div className="home__button"><Link to="/new"><button>add new gradient</button></Link></div>
-          {showGradientColor} 
+          <ul>
+            {colors.map(item => <Home key={item.id} id={item.id} firstColor={item.firstColor} secondColor={item.secondColor} removeGradient={removeGradient}/>)} 
+          </ul>
+          
       </section>
     ) : (
       <section className="home__container">
